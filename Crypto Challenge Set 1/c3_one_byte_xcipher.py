@@ -24,7 +24,7 @@ def score(text: bytes, base_stats: tuple) -> float:
         avg = sum(differences)/len(differences)
     except:
         return 9999.
-    return avg
+    return round(avg, 5)
 
 
 def xor(bstr1: bytes, bstr2: bytes) -> bytes:
@@ -55,3 +55,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# Sample output
+# [{'Score': 0.03191, 'Text': b'Ieeacdm*GI-y*fcao*k*ze\x7fdn*el*hkied'},
+#  {'Score': 0.03203, 'Text': b"Cooking MC's like a pound of bacon"},
+#  {'Score': 0.039, 'Text': b"Dhhlni`'JD t'knlb'f'whric'ha'efdhi"}]
