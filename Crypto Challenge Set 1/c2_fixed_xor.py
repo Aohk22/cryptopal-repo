@@ -1,4 +1,7 @@
 def fixed_xor(str1: str, str2: str) -> bytes:
+    '''
+    XOR 2 strings but take minimum length
+    '''
     bstr1 = bytes.fromhex(str1)
     bstr2 = bytes.fromhex(str2)
     return b''.join([bytes([b1 ^ b2]) for b1, b2 in zip(bstr1, bstr2)])

@@ -14,6 +14,7 @@ for i, byte_str in enumerate(lines):
 line_scores_sorted = sorted(line_scores, key=lambda x: x['Score'])
 pprint(line_scores_sorted[:3])
 
+# Find string that is single-byte XOR'ed
 # Sample output
 # [{'Score': 0.02747, 'Text': b'Now that the party is jumping\n', 'index': 170},
 #  {'Score': 0.03289,
